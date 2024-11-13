@@ -17,7 +17,7 @@ app.use(express.json())
 
 app.use(
     cors({
-        origin: 'https://sluchpro.netlify.app/',
+        origin: process.env.DOMAINNAME,
         credentials: true
     })
 )
